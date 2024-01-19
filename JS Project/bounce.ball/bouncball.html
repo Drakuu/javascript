@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .con {
+            background: #2c2929;
+            min-height: 100vh;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .animate {
+            animation: bounce 7s linear 1 alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            10% {
+                transform: translateY(200px);
+            }
+
+            20% {
+                transform: translate(100px, 100px);
+            }
+
+            30% {
+                transform: translate(150px, 200px);
+            }
+
+            40% {
+                transform: translate(220px, 100px);
+            }
+
+            50% {
+                transform: translate(280px, 200px);
+            }
+
+            60% {
+                transform: translate(320px, 140px);
+            }
+
+            70% {
+                transform: translate(350px, 200px);
+            }
+
+            80% {
+                transform: translate(380px, 170px);
+            }
+
+            90% {
+                transform: translate(400px, 200px);
+            }
+
+            95% {
+                transform: translate(410px, 190px);
+            }
+
+            100% {
+                transform: translate(420px, 200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="ball" onclick="animateBall()"></div>
+    </div>
+    
+    <script src="bounce.js"></script>
+</body>
+
+</html>

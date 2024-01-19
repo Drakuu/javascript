@@ -1,0 +1,65 @@
+:root {
+  --dullblack: rgba(0, 0, 0, 0.548);
+  --dullwhite: rgba(247, 247, 247, 0.863);
+}
+
+html,
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100dvh;
+  background-image: url('https://shorturl.at/nyGJ8');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* aspect-ratio: 1; */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dullwhite);
+  border-radius: 10px;
+  color: var(--dullwhite);
+}
+
+.styled-element {
+  background-color: var(--dullblack);
+  margin: 10px 0;
+  font-size: 1.5rem;
+  border-radius: 9px;
+  padding: 9px;
+}
+
+#time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  /* color: var(--dullwhite); */
+}
+
+@media screen and (max-width: 600px) {
+  #time {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Add this line to center items horizontally */
+  }
+
+  .hour {
+    padding: 0 9px;
+    /* Adjust the padding values accordingly */
+  }
+}
